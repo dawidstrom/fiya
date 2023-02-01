@@ -1,0 +1,1 @@
+game_controller = instance_find(oGameController, 0);

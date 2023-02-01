@@ -1,0 +1,1 @@
+draw_sprite(sUpgradeContainer, 0, x, y);
