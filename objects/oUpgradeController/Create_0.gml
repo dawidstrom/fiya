@@ -61,6 +61,7 @@ add_button(types.demonSword);
 add_button(types.rocket);
 add_button(types.bomb);
 add_button(types.clock);
+add_button(types.auroraMachine);
 
 
 for (var i=0; i<10; i++) {
