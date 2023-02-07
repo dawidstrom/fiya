@@ -22,6 +22,9 @@ if hp <= 0 {
 	}
 	
 	var i = item_controller.item_types[? current_type].cost*2;
+	if i > 0 {
+		audio_play_sound(soundCoin2, 0, false);
+	}
 	while 0 < i {
 		var coin = instance_create_depth(x,y,-1,oCoin);
 		if i > 50 {

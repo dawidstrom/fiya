@@ -1,7 +1,7 @@
 current_type = types.none;
 is_pressed = false;
 gui_shown = false;
-locked = true;
+locked = false; //true;
 
 item_controller = instance_find(oItemController, 0);
 spawner = instance_find(oSpawner, 0);

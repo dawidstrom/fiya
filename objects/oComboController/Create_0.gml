@@ -4,7 +4,7 @@ spawner_ = instance_find(oSpawner, 0);
 debug_controller_ = instance_find(oDebugController, 0);
 
 combos_ = ds_list_create();
-combo_check_cooldown_ = 200;
+combo_check_cooldown_ = 100;
 
 function create_combo(_description, _items, _reward) constructor {
 	description = _description;

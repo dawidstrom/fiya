@@ -2,6 +2,7 @@ var distance = point_distance(x,y,mouse_x,mouse_y);
 
 if distance < absorb_distance {
 	game_controller.coins += game_controller.coin_types[? coin_type].value;
+	audio_play_sound(soundCoin1, 0, false);
 	instance_destroy(self);
 }
 

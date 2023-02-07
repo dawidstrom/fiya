@@ -51,6 +51,7 @@ if debug_controller_.debugging {
 // Check all item combos which are active
 for (var i=0; i<ds_list_size(combos_); i++) {
 	if is_combo_active(combos_[| i], on_fire) {
+		audio_play_sound(soundCheer, 0, false);
 		for (var j=0; j<combos_[| i].reward; j++) {
 			instance_create_depth(spawner_.x, spawner_.y, 10, oReward);
 		}

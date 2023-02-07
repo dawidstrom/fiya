@@ -14,5 +14,6 @@ function add_fire(fire) {
 		phy_rotation = false;
 		phy_fixed_rotation = true;
 		alarm[0] = switch_direction_timer;
+		audio_play_sound(soundScreemTiny, 0, false);
 	}
 }

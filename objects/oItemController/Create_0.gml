@@ -10,6 +10,7 @@ enum types {
 	rocket,
 	triangleCollection,
 	triangleTiny,
+	bomb,
 	none
 }
 
@@ -123,9 +124,19 @@ triangleTiny = {
 	sprite : sTriangleTiny,
 	object : oTriangleTiny,
 	type : types.triangleTiny,
-	cost : 0,
+	cost : 5,
 	hp: 20,
 	spawn_time : 0
+}
+
+bomb = {
+	name : "bomb",
+	sprite : sBomb,
+	object : oBomb,
+	type : types.bomb,
+	cost : 10,
+	hp: 30,
+	spawn_time : 60
 }
 
 item_types = ds_map_create();
@@ -140,3 +151,4 @@ ds_map_add(item_types, types.demonSword, demonSword);
 ds_map_add(item_types, types.rocket, rocket);
 ds_map_add(item_types, types.triangleCollection, triangleCollection);
 ds_map_add(item_types, types.triangleTiny, triangleTiny);
+ds_map_add(item_types, types.bomb, bomb);
