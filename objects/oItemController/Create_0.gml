@@ -11,6 +11,7 @@ enum types {
 	triangleCollection,
 	triangleTiny,
 	bomb,
+	clock,
 	none
 }
 
@@ -139,6 +140,16 @@ bomb = {
 	spawn_time : 60
 }
 
+clock = {
+	name : "clock",
+	sprite : sClockIcon,
+	object : oClock,
+	type : types.clock,
+	cost : 10,
+	hp: 230,
+	spawn_time : 60
+}
+
 item_types = ds_map_create();
 ds_map_add(item_types, types.triangle, triangle);
 ds_map_add(item_types, types.ball, ball);
@@ -152,3 +163,4 @@ ds_map_add(item_types, types.rocket, rocket);
 ds_map_add(item_types, types.triangleCollection, triangleCollection);
 ds_map_add(item_types, types.triangleTiny, triangleTiny);
 ds_map_add(item_types, types.bomb, bomb);
+ds_map_add(item_types, types.clock, clock);

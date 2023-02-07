@@ -60,6 +60,7 @@ add_button(types.corn);
 add_button(types.demonSword);
 add_button(types.rocket);
 add_button(types.bomb);
+add_button(types.clock);
 
 
 for (var i=0; i<10; i++) {
