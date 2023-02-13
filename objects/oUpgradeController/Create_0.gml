@@ -62,6 +62,7 @@ add_button(types.rocket);
 add_button(types.bomb);
 add_button(types.clock);
 add_button(types.auroraMachine);
+add_button(types.egg);
 
 
 for (var i=0; i<10; i++) {

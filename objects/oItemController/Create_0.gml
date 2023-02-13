@@ -13,6 +13,7 @@ enum types {
 	bomb,
 	clock,
 	auroraMachine,
+	egg,
 	none
 }
 
@@ -161,6 +162,16 @@ auroraMachine = {
 	spawn_time : 60
 }
 
+egg = {
+	name : "Egg",
+	sprite : sEgg,
+	object : oEgg,
+	type : types.egg,
+	cost : 10,
+	hp: 230,
+	spawn_time : 60
+}
+
 item_types = ds_map_create();
 ds_map_add(item_types, types.triangle, triangle);
 ds_map_add(item_types, types.ball, ball);
@@ -176,3 +187,4 @@ ds_map_add(item_types, types.triangleTiny, triangleTiny);
 ds_map_add(item_types, types.bomb, bomb);
 ds_map_add(item_types, types.clock, clock);
 ds_map_add(item_types, types.auroraMachine, auroraMachine);
+ds_map_add(item_types, types.egg, egg);
