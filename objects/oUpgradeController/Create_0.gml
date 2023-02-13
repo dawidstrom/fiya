@@ -63,6 +63,7 @@ add_button(types.bomb);
 add_button(types.clock);
 add_button(types.auroraMachine);
 add_button(types.egg);
+add_button(types.campfire);
 
 
 for (var i=0; i<10; i++) {

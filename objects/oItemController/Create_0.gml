@@ -14,6 +14,7 @@ enum types {
 	clock,
 	auroraMachine,
 	egg,
+	campfire,
 	none
 }
 
@@ -172,6 +173,16 @@ egg = {
 	spawn_time : 60
 }
 
+campfire = {
+	name : "Campfire",
+	sprite : sCampfire,
+	object : oCampfire,
+	type : types.campfire,
+	cost : 10,
+	hp: 230,
+	spawn_time : 60
+}
+
 item_types = ds_map_create();
 ds_map_add(item_types, types.triangle, triangle);
 ds_map_add(item_types, types.ball, ball);
@@ -188,3 +199,4 @@ ds_map_add(item_types, types.bomb, bomb);
 ds_map_add(item_types, types.clock, clock);
 ds_map_add(item_types, types.auroraMachine, auroraMachine);
 ds_map_add(item_types, types.egg, egg);
+ds_map_add(item_types, types.campfire, campfire);
